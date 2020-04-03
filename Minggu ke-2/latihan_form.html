@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latih form</title>
+</head>
+<body>
+	<h1 align="center">Form Mahasiswa</h1>
+<form name="fbiomhs" action="form.php" method="post">
+	<table>
+		<tr>
+			<td>NIM</td>
+			<td><input type="text" name="fnim"></td>
+		</tr>
+		<tr>
+			<td>Nama</td>
+			<td><input type="text" name="fnama"></td>
+		</tr>
+		<tr>
+			<td>Tgl Lahir</td>
+			<td><input type="date" name="ftgllahir"></td>
+		</tr>
+		<tr>
+			<td>Jenis Kelamin</td>
+			<td><input type="radio" name="fjeniskelamin" value="L">L
+			<input type="radio" name="fjeniskelamin" value="P">P</td>
+		</tr>
+		<tr>
+			<td>IPK</td>
+			<td><input type="number" name="fipk"></td>
+		</tr>
+		<tr>
+			<td>Agama</td>
+			<td>
+			<select name="fagama">
+				<option value="islam">Islam</option>
+				<option value="kristen">Kristen</option>
+				<option value="katolik">Katolik</option>
+				<option value="hindu">Hindu</option>
+				<option value="budha">Budha</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Bidang Peminatan</td>
+			<td>
+			<select multiple name="fbidangpeminatan[]">
+				<option value="frontend">Front End Web Dev.</option>
+				<option value="backend">Back End Web Dev.</option>
+				<option value="devops">Devops</option>
+				<option value="android">Android Dev.</option>
+				<option value="ios">iOS Dev.</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" name="fsubmit" value="Kirim"></td>
+		</tr>
+</form>
+</table>
+</body>
+</html>
