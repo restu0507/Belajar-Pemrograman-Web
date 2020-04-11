@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link media="all" type="text/css" rel="stylesheet" href="js.css">
+	<title>Latihan Javascript</title>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td>NIM</td>
+			<td>
+			<select id="nim_mhs" onclick="pilihNim()">
+				<option value="">Pilih NIM</option>
+				<option value="Muh. Amin">A11.2015.12345</option>
+				<option value="Santoso">A11.2015.12346</option>
+				<option value="Sutrisno">A11.2015.12347</option>
+			</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Nama</td>
+			<td><input type="text" id="nama_mhs"></td>
+		</tr>
+		
+		<tr>
+			<td>Nilai Tugas</td>
+			<td><input type="number" id="tugas" min='1' max='100' placeholder="1-100" required></td>
+		</tr>
+		
+		<tr>
+			<td>Nilai UTS</td>
+			<td><input type="number" id="uts" min='1' max='100' placeholder="1-100" required></td>
+		</tr>
+		
+		<tr>
+			<td>Nilai UAS</td>
+			<td><input type="number" id="uas" min='1' max='100' placeholder="1-100" required></td>
+		</tr>
+		
+		<tr>
+			<td>Nilai Akhir</td>
+			<td><input type="text" id="akhir" disabled></td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td><button onclick="hitungNilaiAkhir()">Simpan</button></td>
+		</tr>
+	</table>
+	<p id="table"></p>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

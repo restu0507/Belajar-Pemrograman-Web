@@ -1,0 +1,19 @@
+table {
+  border-collapse: collapse;
+  width:100%;
+  vertical-align: center;
+  text-align: center;
+}
+
+table, td, th, tr {
+  border: 1px solid black;
+}
+
+th {
+	padding:10px;
+	background-color: grey;
+}
+
+td {
+	padding:10px;
+}
